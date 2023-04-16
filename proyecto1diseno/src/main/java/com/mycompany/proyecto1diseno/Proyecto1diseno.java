@@ -4,6 +4,8 @@
 
 package com.mycompany.proyecto1diseno;
 
+import util.Traductor;
+
 /**
  *
  * @author HP
@@ -11,6 +13,9 @@ package com.mycompany.proyecto1diseno;
 public class Proyecto1diseno {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      System.out.println(Traductor.traducir("hola me gustan los animales", "inglés"));
+      System.out.println(Traductor.traducir("hola me gustan los animales", "francés"));
+      System.out.println(Traductor.traducir("hola me gustan los animales", "alemán"));
+      System.out.println(Traductor.traducir("i love coding", "español"));
     }
 }

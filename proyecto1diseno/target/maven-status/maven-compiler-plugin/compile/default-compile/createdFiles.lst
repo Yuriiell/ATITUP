@@ -1,6 +1,7 @@
+modelo\Valoracion.class
+util\Traductor.class
 modelo\Categoria.class
 modelo\Curso.class
-modelo\Valoracion.class
 com\mycompany\proyecto1diseno\Proyecto1diseno.class
+util\AnalisisSentimientos.class
 modelo\Item.class
-util\Traductor.class

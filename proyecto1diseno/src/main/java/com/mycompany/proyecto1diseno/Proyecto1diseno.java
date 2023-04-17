@@ -4,7 +4,7 @@
 
 package com.mycompany.proyecto1diseno;
 
-import util.Traductor;
+import util.AnalisisSentimientos;
 
 /**
  *
@@ -13,9 +13,7 @@ import util.Traductor;
 public class Proyecto1diseno {
 
     public static void main(String[] args) {
-      System.out.println(Traductor.traducir("hola me gustan los animales", "inglés"));
-      System.out.println(Traductor.traducir("hola me gustan los animales", "francés"));
-      System.out.println(Traductor.traducir("hola me gustan los animales", "alemán"));
-      System.out.println(Traductor.traducir("i love coding", "español"));
+      System.out.println(AnalisisSentimientos.estimatingSentiment("Me parece que es una idea excelente"));
+      System.out.println(AnalisisSentimientos.estimatingSentiment("Me parece que es una idea mala"));
     }
 }

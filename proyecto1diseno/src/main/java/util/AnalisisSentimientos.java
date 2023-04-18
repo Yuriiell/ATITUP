@@ -4,7 +4,7 @@
  */
 package util;
 
-import edu.stanford.nlp.ling.CoreAnnotations;
+/**import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
@@ -18,7 +18,7 @@ import java.util.Properties;
  * Analisis de sentimientos
  * 
  */
-public class AnalisisSentimientos {
+/**public class AnalisisSentimientos {
   static StanfordCoreNLP pipeline;
   public static void init(){
     Properties props = new Properties();
@@ -43,4 +43,4 @@ public class AnalisisSentimientos {
     }
     return null;
   }
-}
+}*/

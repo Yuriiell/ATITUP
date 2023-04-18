@@ -100,6 +100,7 @@ public class Item {
         } catch (DocumentException e) {
             throw new RuntimeException(e);
         }
+        documento.close();
         return documento;
     }
 }

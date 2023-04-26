@@ -102,6 +102,7 @@
       <label for="respuesta">Ingrese la respuesta</label>
       <input type="text" id="respuesta" name="respuesta" required>
       <button type="button" onclick="consultarChatGPT('respuesta')">Consultar a ChatGPT</button>
+      <input type="text" name="nombre-de-input" id="id-del-input" value="">
       <label for="respuesta-registro">Cuál respuesta desea registrar</label>
       <select id="respuesta-registro" name="respuesta-registro">
         <option value="propia">Respuesta propia</option>
@@ -113,6 +114,7 @@
 <input type="text" id="ejemploRespuesta" name="ejemploRespuesta" required>
 <button type="button" onclick="consultarChatGPT('ejemploRespuesta')">Consultar a ChatGPT</button>
 <div class="chatGPT-result">
+<input type="text" name="nombre-de-input" id="id-del-input" value="">
 <!-- Aquí aparecerá el resultado de la consulta a ChatGPT -->
 </div>
 </div>

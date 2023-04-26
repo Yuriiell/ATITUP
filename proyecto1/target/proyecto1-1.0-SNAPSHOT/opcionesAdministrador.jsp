@@ -1,15 +1,15 @@
 <%-- 
-    Document   : index
-    Created on : 24 abr 2023, 10:50:20
-    Author     : HP
+    Document   : opcionesAdministrador
+    Created on : 26 abr 2023, 01:58:33
+    Author     : yosof
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Selección de Modo</title>
+    <title>Menú Principal Modo Administrador</title>
     <style>
       body {
         background-color: #f1f1f1; /* color de fondo deseado */
@@ -47,16 +47,22 @@
       button[type="submit"]:hover {
         background-color: #005D7B;
       }
+      .back-button {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+      }
     </style>
   </head>
   <body>
     <div class="form-container">
-      <h2>Selección de Modo</h2>
+      <h2>Menú Principal Modo Administrador</h2>
         <div class="form-group">
-          <label>Selecciona el modo de uso:</label>
-          <button type="submit" onclick="window.location.href='ingresarCorreoAdmin.jsp'">Modo Administrador</button>
-          <button type="submit" onclick="window.location.href='vistaPrincipalUsuario.jsp'">Modo Usuario</button>
+          <button type="submit" onclick="window.location.href='catalogoPreguntasAdmin.jsp'">Catálogo de Preguntas</button>
+          <button type="submit" onclick="window.location.href='registroCategoriaAdmin.jsp'">Registrar Categorias</button>
+          <button type="submit" onclick="window.location.href='registroItemAdmin.jsp'">Registrar Item</button>
         </div>
+        <button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->
     </div>
   </body>
 </html>

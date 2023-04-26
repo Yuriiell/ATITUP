@@ -13,13 +13,14 @@
     </head>
     <body>
         <h1>Datos del item</h1>
-        <form action="SvItem" method="POST">
+        <form action="SvRegistrarItem?action=prueba" method="POST">
             <p><label>Prompt:</label> <input type="text" name="prompt"> </p>
             <p><label>Respuesta:</label> <input type="text" name="respuesta"> </p>
             <p><label>Fuente:</label> <input type="text" name="fuente"> </p>
             <p><label>Ejemplo:</label> <input type="text" name="ejemplo"> </p>
             <p><label>Fuente ejemplo:</label> <input type="text" name="fuenteEjemplo"> </p>
             <button type="submit">Enviar</button>
+            
         </form>
     </body>
 </html>

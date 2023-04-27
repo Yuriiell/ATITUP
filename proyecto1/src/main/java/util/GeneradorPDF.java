@@ -25,6 +25,8 @@ public class GeneradorPDF {
         String nombreArchivo="aTitUpItem.pdf";
         try {
             ficheroPdf = new FileOutputStream(nombreArchivo);
+            String rutaDescargas = System.getProperty("user.home") + "\\Downloads\\";
+            ficheroPdf = new FileOutputStream(rutaDescargas + nombreArchivo);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

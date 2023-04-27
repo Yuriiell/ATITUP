@@ -33,7 +33,7 @@ public class Correo {
         });
         //Start our mail message
         Message message = new MimeMessage(session);
-        message.setSubject("INFORMACION  DE ITEM");
+        message.setSubject("INFORMACION DE ATITUP");
 
         String correo= pCorreo;
         Address addressTo= new InternetAddress(correo);
@@ -46,12 +46,12 @@ public class Correo {
         //String nombre= "yuriell"; //atentamente 
 
 
-        messageBodyPart.setContent("<h1>INFORMACION DEL ITEM</h1>", "text/html");
-        messageBodyPart.setContent("<b1>A continuación se adjunta el pdf con los detalles del item seleccionado. </b1>", "text/html");
+        messageBodyPart.setContent("<h1>INFORMACION DE ATITUP</h1>", "text/html");
+        messageBodyPart.setContent("<b1>A continuacion se adjunta el pdf con los detalles. </b1>", "text/html");
         MimeBodyPart pdf = new MimeBodyPart();
 
 // attach the image file
-        pdf.attachFile("C:\\Users\\HP\\Documents\\GitHub\\ATITUP\\proyecto1\\aTitUpItem.pdf"); //AQUI VA EL PDF
+        pdf.attachFile("C:\\Users\\HP\\Downloads\\aTitUpItem.pdf");
         pdf.setFileName("aTitUpItem.pdf");
         multipart.addBodyPart(pdf);
         multipart.addBodyPart(messageBodyPart);

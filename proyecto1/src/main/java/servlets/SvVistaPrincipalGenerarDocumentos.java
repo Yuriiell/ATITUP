@@ -14,8 +14,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.swing.JOptionPane;
 import util.Correo;
 import util.GeneradorPDF;
 
@@ -23,8 +21,8 @@ import util.GeneradorPDF;
  *
  * @author HP
  */
-@WebServlet(name = "SvGenerarDocumentoItem", urlPatterns = {"/SvGenerarDocumentoItem"})
-public class SvGenerarDocumentoItem extends HttpServlet {
+@WebServlet(name = "SvVistaPrincipalGenerarDocumentos", urlPatterns = {"/SvVistaPrincipalGenerarDocumentos"})
+public class SvVistaPrincipalGenerarDocumentos extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -66,8 +64,7 @@ public class SvGenerarDocumentoItem extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String categoria=request.getParameter("item");
-        Document pdf = GeneradorPDF.crearpdf("AQUÍ SE AGREGARÍA EL TOSTRING DEL ITEM SELECCIONADO");
+        Document pdf = GeneradorPDF.crearpdf("AQUÍ SE AGREGARÍA TODO");
         String correo= (String) request.getSession().getAttribute("correo");
         try {
             Correo.enviarCorreo(correo);

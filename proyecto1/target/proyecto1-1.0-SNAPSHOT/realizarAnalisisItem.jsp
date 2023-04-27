@@ -74,7 +74,7 @@
   <body>
     <div class="form-container">
         <h2>Analisis de Sentimientos</h2>
-        <form>
+        <form method="POST" action="SvRealizarAnalisisItem">
             <div class="form-group">
                 <label for="item">Selecciona el ítem:</label>
                 <select id="item" name="item">
@@ -87,7 +87,7 @@
             <div class="form-group">
                 <label for="Resultado">Resultado de Análsis de Sentimiento:</label>
                 <br>
-                <textarea id="Resultado" name="Resultado"></textarea>
+                <input id="Resultado" name="Resultado" value="${resultado}"></input>
             </div>
             <br>
             <button type="button" onclick="history.back()">Atrás</button>

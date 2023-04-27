@@ -61,6 +61,7 @@ public class SvRegistroCategoriaAdmin extends HttpServlet {
             throws ServletException, IOException {
         String cursoSeleccionado=request.getParameter("curso");
         String nombreCategoria=request.getParameter("nombre-categoria");
+        String descripcion= request.getParameter("descripcion-categoria");
         response.sendRedirect("opcionesAdministrador.jsp"); //redirecciona a las siguiente página del formulario web
         
 

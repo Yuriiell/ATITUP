@@ -18,7 +18,7 @@ import modelo.Item;
  */
 public class GeneradorPDF {
     
-    public static Document crearpdf(Item pItem) {
+    public static Document crearpdf(String pTexto) {
         Document documento;
         documento = new Document();
         FileOutputStream ficheroPdf;
@@ -36,7 +36,7 @@ public class GeneradorPDF {
         documento.open();
         try {
             documento.add(new Paragraph("\n\n DATOS DEL ITEM\n"));
-            documento.add(new Paragraph(pItem.toString()));
+            documento.add(new Paragraph(pTexto));
 
         } catch (DocumentException e) {
             throw new RuntimeException(e);

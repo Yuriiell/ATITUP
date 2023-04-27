@@ -88,7 +88,7 @@
       }
     </style>
   </head>
-  <body>
+ <body>
     <div class="form-container">
       <h2>Registro de Ítem</h2>
       <form method="POST" action="SvRegistrarItem">
@@ -98,38 +98,37 @@
           <option value="2">Categoría 2</option>
           <option value="3">Categoría 3</option>
         </select>
-        <form method="POST" action="SvRespuestaChatGPT">
-            <form method="POST" action="SvEjemploChatGPT">
-                <label for="pregunta">Ingrese la pregunta generadora</label>
-                <input type="text" id="pregunta" name="pregunta" required>
-                <label for="respuesta">Ingrese la respuesta</label>
-                <input type="text" id="respuesta" name="respuesta" required>
-                <button type="submit" onclick="consultarChatGPT('respuesta')">Consultar a ChatGPT</button>
-            <label for="respuesta-registro">Cuál respuesta desea registrar</label>
-            <select id="respuesta-registro" name="respuesta-registro">
-              <option value="propia">Respuesta propia</option>
-              <option value="chatgpt">Respuesta ChatGPT</option>
-            </select>
-            <div class="form-group">
-            <label for="ejemploRespuesta">Ingrese el ejemplo de la respuesta</label>
-            <input type="text" id="ejemploRespuesta" name="ejemploRespuesta" required>
-            <button type="submit" onclick="consultarChatGPT('ejemploRespuesta')">Consultar a ChatGPT</button>
-            <div class="chatGPT-result">
+        <label for="pregunta">Ingrese la pregunta generadora</label>
+        <input type="text" id="pregunta" name="pregunta" value="${pregunta}" required>
+        <label for="respuesta">Ingrese la respuesta</label>
+        <input type="text" id="respuesta" name="respuesta" value="${respuesta}" required>
+        <button type="submit" name="accion" value="consultarChatGPTRespuesta">Consultar a ChatGPT (respuesta)</button>
+        <input type="text" name="respuestaObtenida" id="respuestaObtenida" value="${respuestaChat}">
+        <label for="respuesta-registro">Cuál respuesta desea registrar</label>
+        <select id="respuesta-registro" name="respuesta-registro">
+          <option value="propia">Respuesta propia</option>
+          <option value="chatgpt">Respuesta ChatGPT</option>
+        </select>
+        <div class="form-group">
+          <label for="ejemploRespuesta">Ingrese el ejemplo de la respuesta</label>
+          <input type="text" id="ejemploRespuesta" name="ejemploRespuesta" value="${ejemploRespuesta}">
+          <button type="submit" name="accion" value="consultarChatGPTEjemplo">Consultar a ChatGPT (ejemplo)</button>
+          <div class="chatGPT-result">
+            <input type="text" name="ejemploObtenido" id="ejemploObtenido" value="${ejemploChat}">
             <!-- Aquí aparecerá el resultado de la consulta a ChatGPT -->
-            </div>
-            </form>
-            </form>
+          </div>
         </div>
         <div class="form-group">
-        <label for="ejemploSelect">Cuál ejemplo asociado a la respuesta desea registrar</label>
-        <select id="ejemploSelect" name="ejemploSelect">
-        <option value="ejemploPropio">Ejemplo propio</option>
-        <option value="ejemploChatGPT">Ejemplo ChatGPT</option>
-        </select>
+          <label for="ejemploSelect">Cuál ejemplo asociado a la respuesta desea registrar</label>
+          <select id="ejemploSelect" name="ejemploSelect">
+            <option value="ejemploPropio">Ejemplo propio</option>
+            <option value="ejemploChatGPT">Ejemplo ChatGPT</option>
+          </select>
         </div>
-        <button type="submit">Registrar Ítem</button>
-        <button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->
-        </form>
+        <button type="submit" name="accion" value="registrarItem">Registrar Ítem</button>
+        <button type="button" onclick="history.back()">Atrás</button>
+      </form>
     </div>
   </body>
+
 </html>

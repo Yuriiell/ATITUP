@@ -91,43 +91,45 @@
   <body>
     <div class="form-container">
       <h2>Registro de Ítem</h2>
-      <label for="categoria">Seleccione la categoría a la que pertenece el ítem</label>
-      <select id="categoria" name="categoria">
-        <option value="1">Categoría 1</option>
-        <option value="2">Categoría 2</option>
-        <option value="3">Categoría 3</option>
-      </select>
-      <label for="pregunta">Ingrese la pregunta generadora</label>
-      <input type="text" id="pregunta" name="pregunta" required>
-      <label for="respuesta">Ingrese la respuesta</label>
-      <input type="text" id="respuesta" name="respuesta" required>
-      <button type="button" onclick="consultarChatGPT('respuesta')">Consultar a ChatGPT</button>
-      <input type="text" name="nombre-de-input" id="id-del-input" value="">
-      <label for="respuesta-registro">Cuál respuesta desea registrar</label>
-      <select id="respuesta-registro" name="respuesta-registro">
-        <option value="propia">Respuesta propia</option>
-        <option value="chatgpt">Respuesta ChatGPT</option>
+      <form method="POST" action="SvRegistrarItem">
+        <label for="categoria">Seleccione la categoría a la que pertenece el ítem</label>
+        <select id="categoria" name="categoria">
+          <option value="1">Categoría 1</option>
+          <option value="2">Categoría 2</option>
+          <option value="3">Categoría 3</option>
         </select>
-
-<div class="form-group">
-<label for="ejemploRespuesta">Ingrese el ejemplo de la respuesta</label>
-<input type="text" id="ejemploRespuesta" name="ejemploRespuesta" required>
-<button type="button" onclick="consultarChatGPT('ejemploRespuesta')">Consultar a ChatGPT</button>
-<div class="chatGPT-result">
-<input type="text" name="nombre-de-input" id="id-del-input" value="">
-<!-- Aquí aparecerá el resultado de la consulta a ChatGPT -->
-</div>
-</div>
-<div class="form-group">
-<label for="ejemploSelect">Cuál ejemplo asociado a la respuesta desea registrar</label>
-<select id="ejemploSelect" name="ejemploSelect">
-<option value="ejemploPropio">Ejemplo propio</option>
-<option value="ejemploChatGPT">Ejemplo ChatGPT</option>
-</select>
-</div>
-<button type="submit">Registrar Ítem</button>
-<button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->
-</div>
-
+        <form method="POST" action="SvRespuestaChatGPT">
+            <form method="POST" action="SvEjemploChatGPT">
+                <label for="pregunta">Ingrese la pregunta generadora</label>
+                <input type="text" id="pregunta" name="pregunta" required>
+                <label for="respuesta">Ingrese la respuesta</label>
+                <input type="text" id="respuesta" name="respuesta" required>
+                <button type="submit" onclick="consultarChatGPT('respuesta')">Consultar a ChatGPT</button>
+            <label for="respuesta-registro">Cuál respuesta desea registrar</label>
+            <select id="respuesta-registro" name="respuesta-registro">
+              <option value="propia">Respuesta propia</option>
+              <option value="chatgpt">Respuesta ChatGPT</option>
+            </select>
+            <div class="form-group">
+            <label for="ejemploRespuesta">Ingrese el ejemplo de la respuesta</label>
+            <input type="text" id="ejemploRespuesta" name="ejemploRespuesta" required>
+            <button type="submit" onclick="consultarChatGPT('ejemploRespuesta')">Consultar a ChatGPT</button>
+            <div class="chatGPT-result">
+            <!-- Aquí aparecerá el resultado de la consulta a ChatGPT -->
+            </div>
+            </form>
+            </form>
+        </div>
+        <div class="form-group">
+        <label for="ejemploSelect">Cuál ejemplo asociado a la respuesta desea registrar</label>
+        <select id="ejemploSelect" name="ejemploSelect">
+        <option value="ejemploPropio">Ejemplo propio</option>
+        <option value="ejemploChatGPT">Ejemplo ChatGPT</option>
+        </select>
+        </div>
+        <button type="submit">Registrar Ítem</button>
+        <button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->
+        </form>
+    </div>
   </body>
 </html>

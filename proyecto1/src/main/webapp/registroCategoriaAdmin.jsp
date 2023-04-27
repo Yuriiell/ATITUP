@@ -158,6 +158,8 @@
         <h2> </h2>
         <label for="nombre-categoria">Ingrese el nombre de la categoría</label>
         <input type="text" id="nombre-categoria" name="nombre-categoria" required>
+        <label for="descripcion-categoria">Ingrese la descripción de la categoría</label>
+        <input type="text" id="descripcion-categoria" name="descripcion-categoria" required>
         <button type="submit">Registrar Categoría</button>
       </form>
       <button type="button" onclick="history.back()">Atrás</button>

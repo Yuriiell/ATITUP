@@ -9,14 +9,16 @@ import java.util.ArrayList;
  */
 public class Categoria {
     private String nombre;
-    private int codigo;
+    private String codigo;
     private String descripcion;
+    private Curso curso;
     private ArrayList<Item> items;
     private ArrayList<Curso> cursos;
     
-    public Categoria(String pNombre, int pCodigo, String pDescripcion ){
+    public Categoria(String pNombre, String pDescripcion, Curso pCurso){
+        this.curso=pCurso;
         this.nombre = pNombre;
-        this.codigo= pCodigo;
+        this.codigo = null;
         this.descripcion= pDescripcion;
         this.items = new ArrayList();
     }
@@ -25,7 +27,7 @@ public class Categoria {
         return nombre;
     }
 
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 

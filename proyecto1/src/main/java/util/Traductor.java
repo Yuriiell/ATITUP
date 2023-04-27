@@ -4,13 +4,13 @@
  */
 package util;
 
-/**import com.darkprograms.speech.translator.GoogleTranslate;
+import com.darkprograms.speech.translator.GoogleTranslate;
 
 /**
  *
  * @author 
  */
-/**public class Traductor {
+public class Traductor {
   /**
    * Traducir un texto
    * 
@@ -18,7 +18,7 @@ package util;
    * @param idioma idioma al que se traducira
    * @return texto traducido
    */  
-  /**public static String traducir(String texto, String idioma){
+public static String traducir(String texto, String idioma){
     try{
       if(idioma.equalsIgnoreCase("español")){
         return GoogleTranslate.translate("es", texto);
@@ -34,4 +34,4 @@ package util;
     }
     return "null";
   }
-}**/
+}

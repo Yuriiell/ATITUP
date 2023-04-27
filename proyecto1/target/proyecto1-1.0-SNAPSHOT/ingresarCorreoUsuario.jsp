@@ -62,7 +62,7 @@
   <body>
     <div class="form-container">
       <h2>Usuario</h2>
-      <form method="post" action="funcionalidadesUsuario.jsp">
+      <form method="POST" action="SvCorreoUsuario">
         <div class="form-group">
           <label for="correo">Correo electrónico:</label>
           <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>

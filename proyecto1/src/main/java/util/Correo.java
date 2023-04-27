@@ -15,7 +15,7 @@ import java.util.Properties;
  */
 public class Correo {
     
-    public static void enviarCorreo() throws  Exception {
+    public static void enviarCorreo(String pCorreo) throws  Exception {
 
         //authentication info
         Properties properties = new Properties();
@@ -35,7 +35,7 @@ public class Correo {
         Message message = new MimeMessage(session);
         message.setSubject("INFORMACION  DE ITEM");
 
-        String correo= "yuriellcr@estudiantec.cr";
+        String correo= pCorreo;
         Address addressTo= new InternetAddress(correo);
         message.setRecipient(Message.RecipientType.TO, addressTo);
         MimeMultipart multipart= new MimeMultipart();
@@ -43,15 +43,15 @@ public class Correo {
         MimeBodyPart messageBodyPart= new MimeBodyPart();
         messageBodyPart = new MimeBodyPart();
 
-        String nombre= "yuriell"; //atentamente 
+        //String nombre= "yuriell"; //atentamente 
 
 
         messageBodyPart.setContent("<h1>INFORMACION DEL ITEM</h1>", "text/html");
-        messageBodyPart.setContent("<b1>Estimado "+nombre+", a continuacion se adjunta el pdf con los detalles del item seleccionado. </b1>", "text/html");
+        messageBodyPart.setContent("<b1>A continuación se adjunta el pdf con los detalles del item seleccionado. </b1>", "text/html");
         MimeBodyPart pdf = new MimeBodyPart();
 
 // attach the image file
-        pdf.attachFile("C:\\Users\\HP\\Documents\\GitHub\\ATITUP\\proyecto1diseno\\aTitUpItem.pdf"); //AQUI VA EL PDF
+        pdf.attachFile("C:\\Users\\HP\\Documents\\GitHub\\ATITUP\\proyecto1\\aTitUpItem.pdf"); //AQUI VA EL PDF
         pdf.setFileName("aTitUpItem.pdf");
         multipart.addBodyPart(pdf);
         multipart.addBodyPart(messageBodyPart);

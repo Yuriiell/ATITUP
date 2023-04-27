@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author HP
  */
 public class Item {
-    private String prompt;
+    private String pregunta;
     private String respuesta;
     private String fuente;
     private String ejemplo;
@@ -19,8 +19,8 @@ public class Item {
     private ArrayList<Valoracion> valoracionesRespuesta;
     private ArrayList<Valoracion> valoracionesEjemplo;
     
-    public Item(String pPrompt, String pRespuesta, String pFuente, String pEjemplo, String pFuenteEjemplo){
-        this.prompt=pPrompt;
+    public Item(String pPregunta, String pRespuesta, String pFuente, String pEjemplo, String pFuenteEjemplo){
+        this.pregunta=pPregunta;
         this.respuesta=pRespuesta;
         this.fuente=pFuente;
         this.ejemplo=pEjemplo;
@@ -29,8 +29,8 @@ public class Item {
         this.valoracionesEjemplo=new ArrayList();
     }
 
-    public String getPrompt() {
-        return prompt;
+    public String getPregunta() {
+        return pregunta;
     }
 
     public String getRespuesta() {
@@ -67,6 +67,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" + "prompt=" + prompt + ", respuesta=" + respuesta + ", fuente=" + fuente + ", ejemplo=" + ejemplo + ", fuenteEjemplo=" + fuenteEjemplo + ", valoracionesRespuesta=" + valoracionesRespuesta + ", valoracionesEjemplo=" + valoracionesEjemplo + '}';
+        return "Item: \n Pregunta: " + pregunta + "\n "+ "Respuesta: " + respuesta + "\n Fuente: " + fuente + "\n Ejemplo: " + ejemplo + "\n Fuente del ejemplo: " + fuenteEjemplo + "\n valoracionesRespuesta=" + valoracionesRespuesta + "\n valoracionesEjemplo=" + valoracionesEjemplo;
     }
 }

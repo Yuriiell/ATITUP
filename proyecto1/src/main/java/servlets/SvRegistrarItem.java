@@ -58,16 +58,19 @@ public class SvRegistrarItem extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String prompt=request.getParameter("prompt");
+        String categoria=request.getParameter("categoria");
+        //******aquí se le debería hacer add a los items de las categorias
+        String pregunta=request.getParameter("pregunta");
         String respuesta=request.getParameter("respuesta");
-        String fuente=request.getParameter("fuente");
-        String ejemplo=request.getParameter("ejemplo");
-        String fuenteEjemplo=request.getParameter("fuenteEjemplo");
-        System.out.println("prompt:"+prompt);
-        JOptionPane.showMessageDialog(null, respuesta);
-        
+        String respuestaSeleccionada=request.getParameter("respuesta-registro");
+        String ejemplo=request.getParameter("ejemploRespuesta");
+        String ejemploSeleccionado=request.getParameter("ejemploSelect");
+        //JOptionPane.showMessageDialog(null, pregunta);
+        //JOptionPane.showMessageDialog(null, ejemploSeleccionado);
+        response.sendRedirect("opcionesAdministrador.jsp"); //redirecciona a las siguiente página del formulario web
     }
 
+    
     /**
      * Returns a short description of the servlet.
      *

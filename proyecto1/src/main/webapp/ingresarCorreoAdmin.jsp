@@ -61,7 +61,7 @@
   <body>
     <div class="form-container">
       <h2>Administrador</h2>
-      <form method="post" action="opcionesAdministrador.jsp">
+      <form method="POST" action="SvCorreoAdmin">
             <div class="form-group">
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>

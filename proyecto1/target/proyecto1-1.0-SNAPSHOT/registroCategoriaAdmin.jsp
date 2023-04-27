@@ -65,7 +65,7 @@
   <body>
     <div class="form-container">
       <h2>Registro de Categoría</h2>
-      <form onsubmit="return validar()">
+      <form method="POST" action="SvRegistroCategoriaAdmin" onsubmit="return validar()">
         <label for="nombre-categoria">Seleccione el curso al que pertenece:</label>
         <select name="curso">
                         <optgroup label="Bloque 0">
@@ -154,7 +154,7 @@
                             <option value="TI9000">TI9000 - TRABAJO FINAL DE GRADUACIÓN</option>
                         </optgroup>
 
-                      </select>
+                    </select>
         <h2> </h2>
         <label for="nombre-categoria">Ingrese el nombre de la categoría</label>
         <input type="text" id="nombre-categoria" name="nombre-categoria" required>

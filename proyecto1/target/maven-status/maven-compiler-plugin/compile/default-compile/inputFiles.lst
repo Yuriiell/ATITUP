@@ -1,11 +1,15 @@
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\com\mycompany\proyecto1\resources\JakartaEE8Resource.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\modelo\Curso.java
+C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\servlets\SvCorreoAdmin.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\Traductor.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\modelo\Item.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\servlets\SvRegistrarItem.java
+C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\ChatGPT.java
+C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\GeneradorPDF.java
+C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\servlets\SvCorreoUsuario.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\AnalisisSentimientos.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\com\mycompany\proyecto1\JakartaRestConfiguration.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\modelo\Valoracion.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\Correo.java
-C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\util\GeneradorPDF.java
 C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\modelo\Categoria.java
+C:\Users\HP\Documents\GitHub\ATITUP\proyecto1\src\main\java\servlets\SvRegistroCategoriaAdmin.java

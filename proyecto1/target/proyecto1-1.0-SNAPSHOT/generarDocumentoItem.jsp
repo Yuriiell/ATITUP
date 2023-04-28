@@ -74,10 +74,10 @@
   <body>
     <div class="form-container">
         <h2>Consultar ítems</h2>
-        <form>
+        <form method="POST" action="SvGenerarDocumentoItem">
             <div class="form-group">
-                <label for="ítem">Selecciona el ítem:</label>
-                <select id="ítem" name="ítema">
+                <label for="item">Selecciona el ítem:</label>
+                <select id="item" name="item">
                     <!-- Se agregan las opciones de la base de datos -->       
                 </select>
             </div>

@@ -73,8 +73,8 @@
   </head>
   <body>
     <div class="form-container">
-        <h2>Consultar ítems</h2>
-        <form>
+        <h2>Consultar Categoría</h2>
+        <form method="POST" action="SvGenerarDocumentoCategoria">
             <div class="form-group">
                 <label for="categoria">Selecciona la categoría conceptual:</label>
                 <select id="categoria" name="categoria">

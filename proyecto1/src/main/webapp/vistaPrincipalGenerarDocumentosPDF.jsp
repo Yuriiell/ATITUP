@@ -45,9 +45,9 @@
     <div class="form-container">
         <h2>Seleccione una opción:</h2>
         <br>
-       
+            <form method="POST" action="SvVistaPrincipalGenerarDocumentos">
             <input type="submit" name="Generar PDF de todo lo registrado" value="Generar PDF de todo lo registrado"><br><br><!-- Genera el pdf de una vez y lo envía -->
-            
+            </form>
             <form method="post" action="generarDocumentoCategoria.jsp">
             <input type="submit" name="Generar PDF de todo lo registrado en una categoría" value="Generar PDF de todo lo registrado en una categoría"><br><br>
             </form>

@@ -13,18 +13,17 @@ import com.theokanning.openai.edit.EditRequest;
 public class ChatGPT {
     
     public static String conexion(String pPregunta){
-    var service = new OpenAiService("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");
+    var service = new OpenAiService("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");
     var request = EditRequest.builder()
             .model("text-davinci-edit-001")
             .input(pPregunta)
             .instruction("Responder pregunta y explicar respuesta")
             .build();
     String respuesta = "";
-    service.createEdit(request).getChoices();
     List<EditChoice> choices = service.createEdit(request).getChoices();
     for(EditChoice choice: choices){
       respuesta += choice.toString() + "\n";
     }
     return respuesta;
-  }
+    }
 }

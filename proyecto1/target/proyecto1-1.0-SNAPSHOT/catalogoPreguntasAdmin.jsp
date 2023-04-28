@@ -50,24 +50,24 @@
           <th>Pregunta</th>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>Refactoring</td>
+          <td>El refactoring es una actividad de diseño?</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>Principios básicos de diseño</td>
+          <td>Por qué son importantes los principios básicos de diseño?</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>Olores de software</td>
+          <td>Qué es el olor de fragilidad?</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>Deuda técnica</td>
+          <td>Qué es la deuda técnica?</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td>Principios de diseño S.O.L.I.D</td>
+          <td>Qué significa la "S" de las siglas</td>
         </tr>
       </table>
       <button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->

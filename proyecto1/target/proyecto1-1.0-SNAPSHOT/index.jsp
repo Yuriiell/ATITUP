@@ -56,6 +56,7 @@
           <label>Selecciona el modo de uso:</label>
           <button type="submit" onclick="window.location.href='ingresarCorreoAdmin.jsp'">Modo Administrador</button>
           <button type="submit" onclick="window.location.href='ingresarCorreoUsuario.jsp'">Modo Usuario</button>
+          <button type="submit" onclick="window.location.href='traducir.jsp'">Traductor</button>
         </div>
     </div>
   </body>

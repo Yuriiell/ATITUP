@@ -67,7 +67,7 @@
         </tr>
         <tr>
           <td>Principios de diseño S.O.L.I.D</td>
-          <td>Qué significa la "S" de las siglas</td>
+          <td>Qué significa la "S" de las siglas?</td>
         </tr>
       </table>
       <button type="button" onclick="history.back()">Atrás</button> <!-- cuando se redireccione la pagina principal a esta el botón de atrás va a servir -->

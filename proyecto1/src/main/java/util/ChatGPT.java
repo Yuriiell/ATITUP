@@ -13,7 +13,7 @@ import com.theokanning.openai.edit.EditRequest;
 public class ChatGPT {
     
     public static String conexion(String pPregunta){
-    var service = new OpenAiService("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");
+    var service = new OpenAiService("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");
     var request = EditRequest.builder()
             .model("text-davinci-edit-001")
             .input(pPregunta)
